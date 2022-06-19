@@ -1,37 +1,31 @@
 # notes
 
 #### 介绍
-lfs 100M上传测试
+notes库，存储笔记等相关资料，起到备份作用
 
-#### 软件架构
-软件架构说明
+#### 100M大文件上传步骤
+1.下载地址:https://git-lfs.github.com/
+2.下载后安装即可
+3.在本地库中使用 git lfs help 命令就会得到提示
+     1. Setup Git LFS on your system. You only have to do this once per
+        repository per machine:
 
+            git lfs install
 
-#### 安装教程
+     2. Choose the type of files you want to track, for examples all ISO
+        images, with git lfs track:
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+            git lfs track "*.iso"
 
-#### 使用说明
+     3. The above stores this information in gitattributes(5) files, so
+        that file need to be added to the repository:
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+            git add .gitattributes
 
-#### 参与贡献
+     4. Commit, push and work with the files normally:
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+            git add file.iso
+            git commit -m "Add disk image"
+            git push
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+4.根据需求按1234步来，让lfs管理你的大文件(值得注意的是,如果你是普通用户gitee仍然不支持100M上传，不过github支持)
