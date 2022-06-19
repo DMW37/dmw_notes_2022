@@ -1,7 +1,0 @@
-1.访问https://ipaddress.com/website/www.github.com 获取ip
-2.根据ip 配置 github.com 的映射 在hosts文件中
-3.端口号根据自己的代理端口进行修改，一般 ss 是1080，v2ray 是 1081
-git config --global http.proxy 'socks5://127.0.0.1:1080'
-git config --global https.proxy 'socks5://127.0.0.1:1080'
-
-说明：我也不知道有没有效果
